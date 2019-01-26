@@ -1,9 +1,21 @@
 <head>
     <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
         .container {
             height: 100%;
             position: relative;
         }
+
+        .container2 {
+            height: 20%;
+            background: yellow;
+            transform: translate(0, -40%);
+        }
+
 
         .center {
             margin: 0;
@@ -13,6 +25,18 @@
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
+
+        .bottom {
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            padding: 15px;
+        }
+
+
 
         h1 {
             font-size: 20em;
@@ -32,11 +56,25 @@
             color: white;
             text-decoration: none;
         }
+
+        .done {
+            color: #88ff88 !important;
+        }
+
+        .notdone {
+            color: #ff4444 !important;
+        }
+
+        .done,
+        .notdone {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     </style>
     <title>Are the subs done yet?</title>
 </head>
 
-<body style="background-color: black; color: white;">
+<body>
     <div class="container">
         <div class="center">
             <h1>
@@ -45,5 +83,26 @@
                 </a>
             </h1>
         </div>
+        <div class="bottom">
+            <h3>
+                <a class="notdone">1</a>
+                <a class="notdone">2</a>
+                <a class="notdone">3</a>
+                <a class="notdone">4</a>
+                <a class="notdone">5</a>
+                <a class="notdone">6</a>
+                <a class="notdone">7</a>
+                <a class="notdone">8</a>
+                <a class="notdone">9</a>
+                <a class="notdone">10</a>
+            </h3>
+        </div>
+
     </div>
+    <!-- <div class="container2">
+        <div class="bottom">
+            <h1>O</h1>
+        </div>
+    </div> -->
+
 </body>
